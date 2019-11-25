@@ -1,10 +1,10 @@
 {
   "name": "dummy-package",
   "version": "1.0.1",
-  "description": "",
+  "description": "For test only",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p ./tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -13,6 +13,6 @@
   "author": "Kittisak Khamdaeng",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "typescript": "~3.0.1"
   }
 }
