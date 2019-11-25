@@ -2,9 +2,10 @@
   "name": "dummy-package",
   "version": "1.0.1",
   "description": "For test only",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc -p ./tsconfig.json"
+    "build": "tsc -p ./tsconfig.json",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
