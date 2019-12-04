@@ -17,6 +17,6 @@ export default class EmisSftpConnector {
     }
 
     public get(fileName: string): Promise<any> {
-        return this._sftp.get(fileName, true, null);
+        return this._sftp.get(fileName);
     }
 }
