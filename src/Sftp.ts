@@ -5,6 +5,6 @@ export async function GetFile(fileName: string): Promise<string> {
     await sftp.connect();
 
     return await sftp.get(fileName)
-        .then(() => `Get file successful file=${fileName}`)
-        .catch(err => `Get file error err=${err}`);
+        .then(() => `SUCCESSFUL file=${fileName}`)
+        .catch(err => `ERROR err=${err}`);
 }
